@@ -10,14 +10,16 @@
     <!-- link style.css-->
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="tinycolor.js"></script>
   </head>
   <body>
     <h1 class="title">Color Flipper</h1>
-    <p class="main-description">Background Color: <span class="my-color-value" id="color-value">#c7e8ff</span></p>
-    <button class="btn">Click Me to Change the Background Color</button>
+    <p class="description">Background Color: <span class="my-color-value" id="color-value">#c7e8ff</span></p>
+    <button class="btn" id="btn--color-change">Click Me to Change the Background Color</button>
     <div>
-      <button class="btn">Simple</button>
-      <button class="btn">Hex</button>
+      <button class="btn btn-small" id="btn--simple">Simple</button>
+      <button class="btn btn-small" id="btn--hex">Hex</button>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

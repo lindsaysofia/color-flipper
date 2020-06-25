@@ -6,16 +6,17 @@
 }
 
 :root {
-  --clr-lightblack: #303030;
+  --main-color: black;
   /* Background color */
   --bg-color: #c7e8ff;
   /* Font Sizes */
   --fs-title: 3rem;
-  --fs-description: 2.25rem;
+  --fs-description: 1.5rem;
 }
 
 body {
   background-color: var(--bg-color);
+  color: var(--main-color);
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
@@ -34,6 +35,8 @@ body {
   font-size: var(--fs-description);
 }
 
+.title,
+.description,
 .my-color-value {
   text-transform: uppercase;
 }
@@ -42,15 +45,20 @@ body {
   font-family: inherit;
   outline: none;
   border: none;
-  background-color: var(--clr-lightblack);
+  background-color: var(--main-color);
   color: var(--bg-color);
   padding: .5em 2.5em;
   margin: .5em;
   transition: transform 200ms ease-in-out;
+  text-align: center;
 }
 
 .btn:hover {
   opacity: 0.95;
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.btn-small {
+  width: 10rem;
 }
