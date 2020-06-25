@@ -1,0 +1,56 @@
+/* Set up border box box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-lightblack: #303030;
+  /* Background color */
+  --bg-color: #c7e8ff;
+  /* Font Sizes */
+  --fs-title: 3rem;
+  --fs-description: 2.25rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: var(--fs-title);
+}
+
+.description {
+  font-size: var(--fs-description);
+}
+
+.my-color-value {
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background-color: var(--clr-lightblack);
+  color: var(--bg-color);
+  padding: .5em 2.5em;
+  margin: .5em;
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.95;
+  cursor: pointer;
+  transform: scale(1.1);
+}
